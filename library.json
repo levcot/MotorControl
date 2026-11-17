@@ -1,0 +1,7 @@
+{
+  "name": "MotorControl",
+  "version": "1.0.0",
+  "description": "Eigene IMU-Bibliothek",
+  "frameworks": "arduino",
+  "platforms": "*"
+}

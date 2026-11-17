@@ -1,0 +1,48 @@
+motor_begin()	- Initialisiert alle Motorcontroller und Motoren
+
+motor_encoder(motor) – Encoderwerte auslesen
+
+motor_encoderReset(motor) – Encoderzähler zurücksetzen
+
+void motor_stop(uint8_t motor);
+
+void motor_stopAll();
+
+
+//4 Zusatzmotoren
+
+motor_angle(motor, winkel) - Winkelansteuerung eines Motors, positiv=uhrzeigersinn
+
+motor_speed(motor, speed) - Stellt die Geschwindigkeit eines beliebigen Motors ein
+
+//2 Fahrmotoren -> vielleicht könnte man eine drivebase machen wo man den rad Durchmesser, den radabstand, die beiden Motoren sodass es einfacher macht fürs fahren
+
+motor_drive_speed(speed) - setzt die Geschwindigkeit fürs fahren
+
+motor_drive(mm) - fahren einer eingegebenenen mm anzahl, mit gyro pid-regelung, positiv in eine und negativ in die andere richtung
+
+motor_drive_ir(mm) - fahren einer eingegebene mm anzahl, mit Linienfolger pid Regelung, positiv in eine und negativ in die andere Richtung, bitte auch noch das ich die position der Linie bestimmen kann, ich habe diesen befehl IR_getPosition() -> der gibt von 0-10000 einen wert 0 ist ganz links 10000 ist ganz rechts aus und dann möchte ich bestimmen wo die Linie sein sollte -> standart mässig bei 5000 wenn nichts weiter eingegeben wird und sonst das was eingegeben wird
+
+motor_distance() - Zurückgelegte Strecke berechnen, falls Raddurchmesser und Encoderauflösung bekannt sind
+
+motor_distanceReset() - Berechnete Fahrpositionen auf null setzen
+
+
+motor_turn(winkel) - Roboter dreht sich auf der stelle so viel wie eingegeben mit gyro, positiv=Uhrzeigersinn
+
+motor_turn_one(motor, winkel) - Roboter dreht sich nur mit einem der beiden fahrmotoren, winkel ist wie viel er schluss endlich steht -> also auch mit gyro
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
